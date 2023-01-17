@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Service
 public class MemberController {
 
-    @GetMapping("/")
-    public String sample() {
-        return "hello";
-    }
+//    @GetMapping("/")
+//    public String sample() {
+//        return "hello";
+//    }
 }
