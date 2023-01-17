@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public class MemberController {
 
-//    @GetMapping("/")
-//    public String hello() {
-//        return "hello";
-//    }
+    @GetMapping("/")
+    public String hello() {
+        return "hello";
+    }
 }
