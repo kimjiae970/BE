@@ -60,4 +60,12 @@ jobs:
 
     - name: Upload to S3
       run: aws s3 cp --region ap-northeast-2 ./artizen.zip s3://$S3_BUCKET_NAME/
-        
+      
+      
+       # Deploy
+#     - name: Code Deploy
+#       run: aws deploy create-deployment --application-name "AWS CodeDeploy Application명" 
+#         --deployment-config-name CodeDeployDefault.AllAtOnce --file-exists-behavior OVERWRITE 
+#         --deployment-group-name "AWS 배포그룹명" --s3-location bucket="S3 버켓명",
+#         bundleType=zip,key="압축파일명".zip
+
