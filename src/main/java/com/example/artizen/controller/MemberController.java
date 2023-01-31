@@ -10,9 +10,9 @@ public class MemberController {
     public String hello() {
         return "hello";
     }
-//
-//    @GetMapping("/sample")
-//    public String sample() {
-//        return "sample";
-//    }
+
+    @GetMapping("/sample")
+    public String sample() {
+        return "sample";
+    }
 }
