@@ -15,6 +15,7 @@ on:
 
 env:
   S3_BUCKET_NAME: artizen
+  DEPLOY_APPLICATION_NAME : artizen
 
 jobs:
   build:
@@ -69,7 +70,7 @@ jobs:
     - name: Deploy to AWS EC2 from S3
       run: |
             aws deploy create-deployment \
-            --application-name artizen \
+            --application-name $DEPLOY_APPLICATION_NAME  \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
             --file-exists-behavior OVERWRITE 
             --deployment-group-name Artizen_group \
