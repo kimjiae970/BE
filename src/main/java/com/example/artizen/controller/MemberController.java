@@ -18,8 +18,8 @@ public class MemberController {
     }
 
 
-    @GetMapping("/pupu")
+    @GetMapping("/pu")
     public String pupu() {
-        return "puuu";
+        return "puuu___나와라 얍";
     }
 }
