@@ -11,10 +11,12 @@ public class MemberController {
         return "hello";
     }
 
+
     @GetMapping("/sample")
     public String sample() {
         return "sample";
     }
+
 
     @GetMapping("/pupu")
     public String pupu() {
