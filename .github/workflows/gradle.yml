@@ -73,7 +73,8 @@ jobs:
             --deployment-config-name CodeDeployDefault.AllAtOnce \
             --file-exists-behavior OVERWRITE 
             --deployment-group-name Artizen_group \
-            --s3-location bucket=$S3_BUCKET_NAME,key=$GITHUB_SHA.zip,bundleType=zip
+            --s3-location "bucket=$S3_BUCKET_NAME,key=$GITHUB_SHA.zip,bundleType=zip"
+
       
        # Deploy
 #     - name: Code Deploy
