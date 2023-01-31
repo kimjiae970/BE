@@ -8,18 +8,18 @@ public class MemberController {
 
     @GetMapping("/")
     public String hello() {
-        return "hello";
+        return "hello!!";
     }
 
 
     @GetMapping("/sample")
     public String sample() {
-        return "sample";
+        return "sample!!";
     }
 
 
     @GetMapping("/pupu")
     public String pupu() {
-        return "puuu";
+        return "puuu!!";
     }
 }
