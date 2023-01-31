@@ -70,10 +70,10 @@ jobs:
     - name: Deploy to AWS EC2 from S3
       run: |
             aws deploy create-deployment \
-            --application-name $DEPLOY_APPLICATION_NAME  \
+            --application-name artizen  \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
+            --deployment-group-name "Artizen_group" \
             --file-exists-behavior OVERWRITE 
-            --deployment-group-name Artizen_group \
             --s3-location "bucket=$S3_BUCKET_NAME,key=$GITHUB_SHA.zip,bundleType=zip"
 
       
