@@ -15,4 +15,9 @@ public class MemberController {
     public String sample() {
         return "sample";
     }
+
+    @GetMapping("/pupu")
+    public String pupu() {
+        return "puuu";
+    }
 }
