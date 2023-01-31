@@ -15,7 +15,6 @@ on:
 
 env:
   S3_BUCKET_NAME: artizen
-  DEPLOY_APPLICATION_NAME : artizen
 
 jobs:
   build:
@@ -72,8 +71,8 @@ jobs:
             aws deploy create-deployment \
             --application-name artizen  \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
+            --file-exists-behavior OVERWRITE \
             --deployment-group-name "Artizen_group" \
-            --file-exists-behavior OVERWRITE 
             --s3-location "bucket=$S3_BUCKET_NAME,key=$GITHUB_SHA.zip,bundleType=zip"
 
       
